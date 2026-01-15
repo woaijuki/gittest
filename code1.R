@@ -24,16 +24,18 @@ message("The average salary in the company is: $", average_salary)
 # This helps us see who earns the most visually
 barplot(employees$salary, 
         names.arg = employees$name, 
-        col       = "red", 
-        main      = "Salary Overview",
+        col       = "blue", 
+        main      = "Salary",
         ylab      = "Salary in USD",
         xlab      = "Employee Name")
 
 # Create a new column 'bonus' by multiplying salary by 0.10
 employees$bonus <- employees$salary * 0.10
 
+
 # Create a new column 'age' 
 employees$age <- year - birthyear
+
 
 # Create a 'total_pay' column
 employees$total_pay <- employees$salary + employees$bonus
