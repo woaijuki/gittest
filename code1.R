@@ -24,7 +24,7 @@ message("The average salary in the company is: $", average_salary)
 # This helps us see who earns the most visually
 barplot(employees$salary, 
         names.arg = employees$name, 
-        col       = "yellow", 
+        col       = "red", 
         main      = "Salary",
         ylab      = "Salary in USD",
         xlab      = "Employee Name")
